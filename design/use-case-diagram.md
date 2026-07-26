@@ -1,79 +1,86 @@
 # Use Case Diagram
 
 ```mermaid
-flowchart TD
-    Visitor([Visitor])
-    Student([Student])
-    Parent([Parent])
-    Teacher([Teacher])
-    Accountant([Accountant])
-    Admin([Admin])
-    Principal([Principal])
-    SuperAdmin([Super Admin])
+usecaseDiagram
+    actor Visitor
+    actor Student
+    actor Parent
+    actor Teacher
+    actor Accountant
+    actor Admin
+    actor Principal
+    actor SuperAdmin
 
-    subgraph Public["Public Website"]
-        UC1[View Homepage]
-        UC2[Write Review]
-        UC3[Submit Contact Form]
-        UC4[View Notices]
-    end
+    usecase UC1 as "View Homepage"
+    usecase UC2 as "Write Review"
+    usecase UC3 as "Submit Application"
+    usecase UC4 as "Pay Fees Online"
+    usecase UC5 as "View Results"
+    usecase UC6 as "Mark Attendance"
+    usecase UC7 as "Edit Attendance"
+    usecase UC8 as "Enter Results"
+    usecase UC9 as "Verify Results"
+    usecase UC10 as "Publish Results"
+    usecase UC11 as "Manage Fee Categories"
+    usecase UC12 as "Assign Fees"
+    usecase UC13 as "Generate Certificates"
+    usecase UC14 as "Generate Marksheets"
+    usecase UC15 as "Generate ID Cards"
+    usecase UC16 as "Manage Academic Years"
+    usecase UC17 as "Promote Students"
+    usecase UC18 as "Review Applications"
+    usecase UC19 as "View Dashboard"
+    usecase UC20 as "Export IEMIS Reports"
+    usecase UC21 as "Manage Notices"
+    usecase UC22 as "Manage Users"
+    usecase UC23 as "Login"
 
-    subgraph Auth["Authentication"]
-        UC5[Login]
-        UC6[Logout]
-    end
+    Visitor --> UC1
+    Visitor --> UC2
 
-    subgraph Attendance["Attendance Management"]
-        UC7[Mark Student Attendance]
-        UC8[Edit Attendance]
-        UC9[View Attendance Reports]
-        UC10[Mark Teacher Attendance]
-    end
+    Student --> UC23
+    Student --> UC5
 
-    subgraph Results["Results & Grading"]
-        UC11[Enter Results]
-        UC12[Verify Results]
-        UC13[Publish Results]
-        UC14[View Results]
-    end
+    Parent --> UC23
+    Parent --> UC4
+    Parent --> UC5
 
-    subgraph Fees["Fee Management"]
-        UC15[Create Fee Categories]
-        UC16[Assign Fees to Students]
-        UC17[Pay Fees Online]
-        UC18[Generate Fee Receipts]
-    end
+    Teacher --> UC23
+    Teacher --> UC6
+    Teacher --> UC7
+    Teacher --> UC8
+    Teacher --> UC5
 
-    subgraph Documents["Documents"]
-        UC19[Generate Certificate]
-        UC20[Generate Marksheet]
-        UC21[Generate ID Card]
-    end
+    Accountant --> UC23
+    Accountant --> UC11
+    Accountant --> UC12
+    Accountant --> UC4
 
-    subgraph Academic["Academic Year"]
-        UC22[Manage Academic Years]
-        UC23[Promote Students]
-    end
+    Admin --> UC23
+    Admin --> UC6
+    Admin --> UC7
+    Admin --> UC8
+    Admin --> UC10
+    Admin --> UC11
+    Admin --> UC12
+    Admin --> UC13
+    Admin --> UC14
+    Admin --> UC15
+    Admin --> UC16
+    Admin --> UC17
+    Admin --> UC18
+    Admin --> UC19
+    Admin --> UC20
+    Admin --> UC21
+    Admin --> UC22
 
-    subgraph Admissions["Admissions"]
-        UC24[Submit Application]
-        UC25[Review Applications]
-    end
+    Principal --> UC23
+    Principal --> UC9
+    Principal --> UC10
+    Principal --> UC16
+    Principal --> UC17
+    Principal --> UC19
 
-    subgraph AdminTasks["Administration"]
-        UC26[Manage Users]
-        UC27[View Dashboard]
-        UC28[Export IEMIS Reports]
-        UC29[Manage School Settings]
-        UC30[Manage Notices]
-    end
-
-    Visitor --> UC1 & UC2 & UC3 & UC4
-    Student --> UC5 & UC6 & UC14 & UC17
-    Parent --> UC5 & UC6 & UC14 & UC17
-    Teacher --> UC5 & UC6 & UC7 & UC8 & UC11 & UC14
-    Accountant --> UC5 & UC6 & UC9 & UC15 & UC16 & UC18
-    Admin --> UC5 & UC6 & UC7 & UC8 & UC9 & UC10 & UC11 & UC12 & UC13 & UC15 & UC16 & UC18 & UC19 & UC20 & UC21 & UC22 & UC23 & UC25 & UC26 & UC27 & UC28 & UC29 & UC30
-    Principal --> UC5 & UC6 & UC9 & UC12 & UC13 & UC22 & UC23 & UC27
-    SuperAdmin --> UC5 & UC6 & UC26 & UC29
+    SuperAdmin --> UC23
+    SuperAdmin --> UC22
 ```
