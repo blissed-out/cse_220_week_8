@@ -1,0 +1,61 @@
+<mxfile host="Electron" agent="Mozilla/5.0">
+  <diagram id="class-diagram" name="Class Diagram">
+    <mxGraphModel dx="969" dy="1184" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="shape=umlClass;html=1;fillColor=#DAE8FC;gradientColor=#C4D6F5;strokeColor=#4A6FA5;fontSize=11;whiteSpace=wrap;shadow=1;strokeWidth=2;fontColor=#1A365D;" value="&lt;b&gt;School&lt;/b&gt;&#xa;- school_id: int&#xa;- name: string&#xa;- address: string&#xa;- phone: string&#xa;- email: string&#xa;--&#xa;+ addStudent(): void&#xa;+ addTeacher(): void&#xa;+ getSchoolInfo(): School" vertex="1">
+          <mxGeometry height="140" width="220" x="380" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="shape=umlClass;html=1;fillColor=#DAE8FC;gradientColor=#C4D6F5;strokeColor=#4A6FA5;fontSize=11;whiteSpace=wrap;shadow=1;strokeWidth=2;fontColor=#1A365D;" value="&lt;b&gt;AcademicYear&lt;/b&gt;&#xa;- year_id: int&#xa;- start_date: date&#xa;- end_date: date&#xa;- status: string&#xa;--&#xa;+ activate(): void&#xa;+ close(): void" vertex="1">
+          <mxGeometry height="140" width="220" x="80" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=umlClass;html=1;fillColor=#DAE8FC;gradientColor=#C4D6F5;strokeColor=#4A6FA5;fontSize=11;whiteSpace=wrap;shadow=1;strokeWidth=2;fontColor=#1A365D;" value="&lt;b&gt;Class&lt;/b&gt;&#xa;- class_id: int&#xa;- name: string&#xa;- section: string&#xa;--&#xa;+ getStudents(): Student[]&#xa;+ getSubjects(): Subject[]" vertex="1">
+          <mxGeometry height="140" width="220" x="380" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="shape=umlClass;html=1;fillColor=#FADBD8;gradientColor=#F2C3C3;strokeColor=#C0392B;fontSize=11;whiteSpace=wrap;shadow=1;strokeWidth=2;fontColor=#7B241C;" value="&lt;b&gt;PortalAccount&lt;/b&gt;&#xa;- account_id: int&#xa;- email: string&#xa;- role: string&#xa;- status: string&#xa;--&#xa;+ login(): bool&#xa;+ logout(): void" vertex="1">
+          <mxGeometry height="140" width="220" x="680" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="shape=umlClass;html=1;fillColor=#FADBD8;gradientColor=#F2C3C3;strokeColor=#C0392B;fontSize=11;whiteSpace=wrap;shadow=1;strokeWidth=2;fontColor=#7B241C;" value="&lt;b&gt;Teacher&lt;/b&gt;&#xa;- teacher_id: int&#xa;- name: string&#xa;- email: string&#xa;- subject: string&#xa;--&#xa;+ markAttendance(): void&#xa;+ enterResults(): void" vertex="1">
+          <mxGeometry height="140" width="220" x="80" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="shape=umlClass;html=1;fillColor=#FADBD8;gradientColor=#F2C3C3;strokeColor=#C0392B;fontSize=11;whiteSpace=wrap;shadow=1;strokeWidth=2;fontColor=#7B241C;" value="&lt;b&gt;Student&lt;/b&gt;&#xa;- student_id: int&#xa;- name: string&#xa;- class_id: int&#xa;- address: string&#xa;--&#xa;+ viewResults(): Result[]&#xa;+ viewAttendance(): Attendance[]" vertex="1">
+          <mxGeometry height="140" width="220" x="680" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="shape=umlClass;html=1;fillColor=#D5F5E3;gradientColor=#C0E8D4;strokeColor=#27AE60;fontSize=11;whiteSpace=wrap;shadow=1;strokeWidth=2;fontColor=#1A5C32;" value="&lt;b&gt;Subject&lt;/b&gt;&#xa;- subject_id: int&#xa;- name: string&#xa;- code: string&#xa;- full_marks: int&#xa;--&#xa;+ getTeachers(): Teacher[]" vertex="1">
+          <mxGeometry height="140" width="220" x="380" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="shape=umlClass;html=1;fillColor=#D5F5E3;gradientColor=#C0E8D4;strokeColor=#27AE60;fontSize=11;whiteSpace=wrap;shadow=1;strokeWidth=2;fontColor=#1A5C32;" value="&lt;b&gt;Attendance&lt;/b&gt;&#xa;- attendance_id: int&#xa;- date: date&#xa;- status: string&#xa;--&#xa;+ markPresent(): void&#xa;+ markAbsent(): void" vertex="1">
+          <mxGeometry height="140" width="220" x="380" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="shape=umlClass;html=1;fillColor=#D5F5E3;gradientColor=#C0E8D4;strokeColor=#27AE60;fontSize=11;whiteSpace=wrap;shadow=1;strokeWidth=2;fontColor=#1A5C32;" value="&lt;b&gt;StudentResult&lt;/b&gt;&#xa;- result_id: int&#xa;- term: string&#xa;- marks: float&#xa;- grade: string&#xa;--&#xa;+ calculateGPA(): float&#xa;+ publish(): void" vertex="1">
+          <mxGeometry height="140" width="220" x="680" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" source="2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=open;endFill=0;startArrow=diamond;startFill=1;startSize=14;strokeWidth=2;strokeColor=#5B7EBF;" target="3" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" source="2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=open;endFill=0;startArrow=diamond;startFill=1;startSize=14;strokeWidth=2;strokeColor=#5B7EBF;" target="4" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" source="2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=open;endFill=0;startArrow=diamond;startFill=1;startSize=14;strokeWidth=2;strokeColor=#5B7EBF;" target="5" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" source="4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=open;endFill=0;startArrow=diamond;startFill=1;startSize=14;strokeWidth=2;strokeColor=#5B7EBF;" target="7" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" source="4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=open;endFill=0;startArrow=diamond;startFill=1;startSize=14;strokeWidth=2;strokeColor=#5B7EBF;" target="8" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;strokeColor=#5B7EBF;" target="8" value="teaches">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" source="7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=open;endFill=0;startArrow=diamond;startFill=1;startSize=14;strokeWidth=2;strokeColor=#5B7EBF;" target="9" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" edge="1" parent="1" source="7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=open;endFill=0;startArrow=diamond;startFill=1;startSize=14;strokeWidth=2;strokeColor=#5B7EBF;" target="10" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
