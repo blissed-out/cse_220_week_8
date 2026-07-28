@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<mxfile host="Electron" modified="2026-07-28T08:00:00.000Z" agent="Mozilla/5.0" version="24.7.8" etag="sequence-diagram" type="device">
+  <diagram id="sequence-diagram" name="Sequence Diagram">
+    <mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="800" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="2" value="Teacher" style="shape=umlLifeline;html=1;shadow=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#FADBD8;strokeColor=#C0392B;fontColor=#7B241C;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="110" height="620" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="AttendancePage" style="shape=umlLifeline;html=1;shadow=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#DAE8FC;strokeColor=#4A6FA5;fontColor=#1A365D;" vertex="1" parent="1">
+          <mxGeometry x="260" y="40" width="110" height="620" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="Controller" style="shape=umlLifeline;html=1;shadow=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#D5F5E3;strokeColor=#27AE60;fontColor=#1A5C32;" vertex="1" parent="1">
+          <mxGeometry x="470" y="40" width="110" height="620" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="Database" style="shape=umlLifeline;html=1;shadow=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#FDEBD0;strokeColor=#D4873A;fontColor=#6B4226;" vertex="1" parent="1">
+          <mxGeometry x="680" y="40" width="110" height="620" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="14" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6C8EBF;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="306" y="190" width="18" height="860" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#239B56;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="516" y="340" width="18" height="440" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B9770E;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="726" y="420" width="18" height="220" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="6" value="Select class &amp; date" style="html=1;rounded=0;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="115" y="190" as="sourcePoint"/>
+            <mxPoint x="306" y="190" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="7" value="Mark attendance" style="html=1;rounded=0;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="115" y="300" as="sourcePoint"/>
+            <mxPoint x="306" y="300" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="8" value="Submit" style="html=1;rounded=0;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="115" y="380" as="sourcePoint"/>
+            <mxPoint x="306" y="380" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="9" value="POST /mark-attendance" style="html=1;rounded=0;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="324" y="340" as="sourcePoint"/>
+            <mxPoint x="516" y="340" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="10" value="upsert records" style="html=1;rounded=0;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="534" y="420" as="sourcePoint"/>
+            <mxPoint x="726" y="420" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="11" value="success" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="726" y="600" as="sourcePoint"/>
+            <mxPoint x="534" y="600" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="12" value="{success: true}" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="516" y="660" as="sourcePoint"/>
+            <mxPoint x="324" y="660" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="13" value="Attendance saved" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="306" y="1050" as="sourcePoint"/>
+            <mxPoint x="115" y="1050" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
