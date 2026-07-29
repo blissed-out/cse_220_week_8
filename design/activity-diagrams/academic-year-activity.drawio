@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<mxfile host="Electron" agent="Mozilla/5.0" version="24.7.8" etag="academic-year" type="device">
+  <diagram id="academic-year" name="Academic Year Activity">
+    <mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="750" pageHeight="950" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" style="ellipse;shape=ellipse;fillColor=#000000;strokeColor=none;html=1;" vertex="1" parent="1">
+          <mxGeometry x="367" y="20" width="26" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#4A6FA5;fontSize=12;shadow=1;strokeWidth=2;fontColor=#1A365D;" vertex="1" parent="1" value="Close current&#10;academic year">
+          <mxGeometry x="295" y="80" width="170" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#4A6FA5;fontSize=12;shadow=1;strokeWidth=2;fontColor=#1A365D;" vertex="1" parent="1" value="Finalize&#10;attendance &amp;&#10;results">
+          <mxGeometry x="295" y="170" width="170" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#4A6FA5;fontSize=12;shadow=1;strokeWidth=2;fontColor=#1A365D;" vertex="1" parent="1" value="Archive year&#10;data">
+          <mxGeometry x="295" y="270" width="170" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#D4873A;fontSize=12;shadow=1;strokeWidth=2;fontColor=#6B4226;" vertex="1" parent="1" value="Promote students&#10;to next class">
+          <mxGeometry x="290" y="360" width="180" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5F5E3;strokeColor=#27AE60;fontSize=12;shadow=1;strokeWidth=2;fontColor=#1A5C32;" vertex="1" parent="1" value="Auto-promote&#10;on pass criteria">
+          <mxGeometry x="60" y="390" width="140" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#4A6FA5;fontSize=12;shadow=1;strokeWidth=2;fontColor=#1A365D;" vertex="1" parent="1" value="Manually assign&#10;repeating students">
+          <mxGeometry x="320" y="390" width="170" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#4A6FA5;fontSize=12;shadow=1;strokeWidth=2;fontColor=#1A365D;" vertex="1" parent="1" value="Create new&#10;academic year">
+          <mxGeometry x="295" y="510" width="170" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#4A6FA5;fontSize=12;shadow=1;strokeWidth=2;fontColor=#1A365D;" vertex="1" parent="1" value="Set as active&#10;year">
+          <mxGeometry x="295" y="600" width="170" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" style="ellipse;shape=ellipse;fillColor=#000000;strokeColor=#000000;html=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="365" y="700" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" style="endArrow=open;endFill=0;html=1;rounded=0;fontSize=10;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="380" y="46" as="sourcePoint"/>
+            <mxPoint x="380" y="80" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" style="endArrow=open;endFill=0;html=1;rounded=0;fontSize=10;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="380" y="130" as="sourcePoint"/>
+            <mxPoint x="380" y="170" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" style="endArrow=open;endFill=0;html=1;rounded=0;fontSize=10;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="380" y="230" as="sourcePoint"/>
+            <mxPoint x="380" y="270" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" style="endArrow=open;endFill=0;html=1;rounded=0;fontSize=10;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="380" y="320" as="sourcePoint"/>
+            <mxPoint x="380" y="360" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" style="endArrow=open;endFill=0;html=1;rounded=0;fontSize=10;strokeWidth=2;" edge="1" parent="1" value="Pass">
+          <mxGeometry as="geometry">
+            <mxPoint x="290" y="395" as="sourcePoint"/>
+            <mxPoint x="200" y="415" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="245" y="395"/>
+              <mxPoint x="245" y="415"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" style="endArrow=open;endFill=0;html=1;rounded=0;fontSize=10;strokeWidth=2;" edge="1" parent="1" value="Fail">
+          <mxGeometry as="geometry">
+            <mxPoint x="380" y="430" as="sourcePoint"/>
+            <mxPoint x="380" y="390" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" style="endArrow=open;endFill=0;html=1;rounded=0;fontSize=10;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="380" y="460" as="sourcePoint"/>
+            <mxPoint x="380" y="510" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" style="endArrow=open;endFill=0;html=1;rounded=0;fontSize=10;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry as="geometry">
+            <mxPoint x="380" y="560" as="sourcePoint"/>
+            <mxPoint x="380" y="600" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
