@@ -1,125 +1,122 @@
 <mxfile host="Electron" agent="Mozilla/5.0">
   <diagram id="use-case-diagram" name="Use Case Diagram">
-    <mxGraphModel dx="2078" dy="2232" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
+    <mxGraphModel dx="2078" dy="2232" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1200" background="#FFFFFF" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        
-        <!-- System Boundary Box -->
+
+        <!-- System Boundary -->
         <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#333333;strokeWidth=2;verticalAlign=top;align=center;fontStyle=1;fontSize=16;fontColor=#333333;" value="School Management System" vertex="1">
-          <mxGeometry height="950" width="670" x="180" y="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Actors -->
-        <mxCell id="3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;rounded=0;curved=0;shadow=0;" value="Visitor" vertex="1">
-          <mxGeometry height="50" width="30" x="50" y="80" as="geometry" />
-        </mxCell>
-        <mxCell id="4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;rounded=0;curved=0;shadow=0;" value="Student" vertex="1">
-          <mxGeometry height="50" width="30" x="50" y="270" as="geometry" />
-        </mxCell>
-        <mxCell id="5" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;rounded=0;curved=0;shadow=0;" value="Parent" vertex="1">
-          <mxGeometry height="50" width="30" x="50" y="370" as="geometry" />
-        </mxCell>
-        <mxCell id="6" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;rounded=0;curved=0;shadow=0;" value="Teacher" vertex="1">
-          <mxGeometry height="50" width="30" x="50" y="520" as="geometry" />
-        </mxCell>
-        <mxCell id="7" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;rounded=0;curved=0;shadow=0;" value="Accountant" vertex="1">
-          <mxGeometry height="50" width="30" x="50" y="650" as="geometry" />
-        </mxCell>
-        <mxCell id="8" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;rounded=0;curved=0;shadow=0;" value="Admin" vertex="1">
-          <mxGeometry height="50" width="30" x="50" y="770" as="geometry" />
+          <mxGeometry height="960" width="710" x="180" y="20" as="geometry" />
         </mxCell>
 
-        <!-- Use Cases (Column 1: Left Column Inside Boundary) -->
-        <mxCell id="9" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;rounded=0;shadow=0;" value="View Homepage" vertex="1">
-          <mxGeometry height="50" width="170" x="240" y="60" as="geometry" />
+        <!-- ===== ACTORS (all at x=50, outside boundary) ===== -->
+        <mxCell id="3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;" value="Visitor" vertex="1">
+          <mxGeometry height="50" width="30" x="50" y="100" as="geometry" />
         </mxCell>
-        <mxCell id="10" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;rounded=0;shadow=0;" value="Write Review" vertex="1">
-          <mxGeometry height="50" width="170" x="240" y="150" as="geometry" />
+        <mxCell id="4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;" value="Student" vertex="1">
+          <mxGeometry height="50" width="30" x="50" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="13" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;rounded=0;shadow=0;" value="Pay Fees Online" vertex="1">
-          <mxGeometry height="50" width="170" x="240" y="250" as="geometry" />
+        <mxCell id="5" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;" value="Parent" vertex="1">
+          <mxGeometry height="50" width="30" x="50" y="400" as="geometry" />
         </mxCell>
-        <mxCell id="12" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;rounded=0;shadow=0;" value="View Results" vertex="1">
-          <mxGeometry height="50" width="170" x="240" y="350" as="geometry" />
+        <mxCell id="6" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;" value="Teacher" vertex="1">
+          <mxGeometry height="50" width="30" x="50" y="530" as="geometry" />
         </mxCell>
-        <mxCell id="14" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;rounded=0;shadow=0;" value="Mark Attendance" vertex="1">
-          <mxGeometry height="50" width="170" x="240" y="470" as="geometry" />
+        <mxCell id="7" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;" value="Accountant" vertex="1">
+          <mxGeometry height="50" width="30" x="50" y="660" as="geometry" />
         </mxCell>
-        <mxCell id="15" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;rounded=0;shadow=0;" value="Manage Fees" vertex="1">
-          <mxGeometry height="50" width="170" x="240" y="580" as="geometry" />
-        </mxCell>
-        <mxCell id="16" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;rounded=0;shadow=0;" value="Manage Results" vertex="1">
-          <mxGeometry height="50" width="170" x="240" y="690" as="geometry" />
-        </mxCell>
-        <mxCell id="18" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;rounded=0;shadow=0;" value="Manage Users" vertex="1">
-          <mxGeometry height="50" width="170" x="240" y="790" as="geometry" />
+        <mxCell id="8" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;" value="Admin" vertex="1">
+          <mxGeometry height="50" width="30" x="50" y="800" as="geometry" />
         </mxCell>
 
-        <!-- Use Cases (Column 2: Right Column Inside Boundary & Login) -->
-        <mxCell id="11" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;fontStyle=1;whiteSpace=wrap;rounded=0;shadow=0;" value="Login" vertex="1">
-          <mxGeometry height="50" width="170" x="640" y="450" as="geometry" />
+        <!-- ===== USE CASES: Left Column (x=250) ===== -->
+        <mxCell id="9" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="View Homepage" vertex="1">
+          <mxGeometry height="50" width="170" x="250" y="70" as="geometry" />
         </mxCell>
-        <mxCell id="17" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;rounded=0;shadow=0;" value="Generate Documents" vertex="1">
-          <mxGeometry height="50" width="170" x="640" y="650" as="geometry" />
+        <mxCell id="10" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Write Review" vertex="1">
+          <mxGeometry height="50" width="170" x="250" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="20" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;rounded=0;shadow=0;" value="View Dashboard" vertex="1">
-          <mxGeometry height="50" width="170" x="640" y="750" as="geometry" />
+        <mxCell id="13" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Pay Fees Online" vertex="1">
+          <mxGeometry height="50" width="170" x="250" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="19" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;rounded=0;shadow=0;" value="Manage Academic Year" vertex="1">
-          <mxGeometry height="50" width="170" x="640" y="850" as="geometry" />
+        <mxCell id="12" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="View Results" vertex="1">
+          <mxGeometry height="50" width="170" x="250" y="370" as="geometry" />
         </mxCell>
-
-        <!-- Actor Associations (Solid Lines) -->
-        <mxCell id="21" edge="1" parent="1" source="3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="9">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="14" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Mark Attendance" vertex="1">
+          <mxGeometry height="50" width="170" x="250" y="490" as="geometry" />
         </mxCell>
-        <mxCell id="22" edge="1" parent="1" source="3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="10">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="15" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Manage Fees" vertex="1">
+          <mxGeometry height="50" width="170" x="250" y="610" as="geometry" />
         </mxCell>
-
-        <mxCell id="23" edge="1" parent="1" source="4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="13">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="18" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Manage Users" vertex="1">
+          <mxGeometry height="50" width="170" x="250" y="730" as="geometry" />
         </mxCell>
-        <mxCell id="24" edge="1" parent="1" source="4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="12">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="20" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="View Dashboard" vertex="1">
+          <mxGeometry height="50" width="170" x="250" y="860" as="geometry" />
         </mxCell>
 
-        <mxCell id="25" edge="1" parent="1" source="5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="13">
-          <mxGeometry relative="1" as="geometry" />
+        <!-- ===== USE CASES: Center-Right Column (x=490) ===== -->
+        <mxCell id="16" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Manage Results" vertex="1">
+          <mxGeometry height="50" width="170" x="490" y="610" as="geometry" />
         </mxCell>
-        <mxCell id="26" edge="1" parent="1" source="5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="12">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="17" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Generate Documents" vertex="1">
+          <mxGeometry height="50" width="170" x="490" y="730" as="geometry" />
         </mxCell>
-
-        <mxCell id="27" edge="1" parent="1" source="6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="14">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="28" edge="1" parent="1" source="6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="16">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="19" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Manage Academic Year" vertex="1">
+          <mxGeometry height="50" width="170" x="490" y="860" as="geometry" />
         </mxCell>
 
-        <mxCell id="29" edge="1" parent="1" source="7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="15">
-          <mxGeometry relative="1" as="geometry" />
+        <!-- ===== LOGIN: Isolated on far right ===== -->
+        <mxCell id="11" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;fontStyle=1;whiteSpace=wrap;" value="Login" vertex="1">
+          <mxGeometry height="50" width="170" x="690" y="480" as="geometry" />
         </mxCell>
 
-        <mxCell id="30" edge="1" parent="1" source="8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="16">
+        <!-- ===== ACTOR ASSOCIATIONS (solid lines) ===== -->
+        <mxCell id="21" edge="1" parent="1" source="3" target="9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="31" edge="1" parent="1" source="8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="18">
+        <mxCell id="22" edge="1" parent="1" source="3" target="10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="32" edge="1" parent="1" source="8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="17">
+        <mxCell id="23" edge="1" parent="1" source="4" target="13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="33" edge="1" parent="1" source="8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="20">
+        <mxCell id="24" edge="1" parent="1" source="4" target="12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="34" edge="1" parent="1" source="8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;shadow=0;" target="19">
+        <mxCell id="25" edge="1" parent="1" source="5" target="13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" source="5" target="12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" edge="1" parent="1" source="6" target="14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28" edge="1" parent="1" source="6" target="16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" edge="1" parent="1" source="7" target="15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="30" edge="1" parent="1" source="8" target="16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="31" edge="1" parent="1" source="8" target="18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" edge="1" parent="1" source="8" target="17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" edge="1" parent="1" source="8" target="20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" edge="1" parent="1" source="8" target="19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
-        <!-- <<include>> Relationships (Dashed Lines with Arrowheads pointing to Login) -->
+        <!-- ===== INCLUDE RELATIONSHIPS (dashed arrows to Login) ===== -->
         <mxCell id="40" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" edge="1" parent="1" source="13" target="11" style="dashed=1;endArrow=open;endSize=8;html=1;rounded=0;strokeColor=#555555;fontSize=10;labelBackgroundColor=#ffffff;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
