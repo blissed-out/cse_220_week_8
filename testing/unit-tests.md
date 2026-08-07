@@ -1,10 +1,10 @@
 # Unit Tests
 
-| Test ID | Test Level | Module | Test Objective | Test Description | Preconditions | Test Input | Expected Output | Actual Output | Status |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| UT-001 | Unit | Results & Grading | Verify NEB GPA calculation for valid marks | Calculate GPA for a standard subject score | System configuration loaded | Subject Mark: 85 (out of 100) | GPA returned: 3.6, Grade: A | | |
-| UT-002 | Unit | Results & Grading | Verify GPA calculation for invalid marks | Handle out-of-bound marks | None | Subject Mark: 105 | Error/Exception: Invalid mark range | | |
-| UT-003 | Unit | Fee Management | Verify late fee computation | Calculate fee with penalty days | Fee rule defined (Rs 10/day late) | Due: Jan 1, Paid: Jan 10 (9 days late), Base: 1000 | Total Fee returned: 1090 | | |
-| UT-004 | Unit | Academic Year | Verify BS to AD date conversion | Convert standard Nepali date to Gregorian | Date utility initialized | BS Date: 2080-01-01 | AD Date: 2023-04-14 | | |
-| UT-005 | Unit | Authentication | Verify password hashing | Ensure passwords are securely hashed | Cryptography module active | Plaintext password: "SecurePass123" | Returns 64-character hash, not plain text | | |
-| UT-006 | Unit | Certificates | Verify QR Code string generation | Check if QR payload contains correct student ID | Student data loaded | Student ID: "ST-2023-001" | Payload string: "verify:ST-2023-001" | | |
+| Test ID | Test Level | Module | Test Description | Preconditions | Test Input | Expected Output | Actual Output | Status | Date | Comment |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| UT-001 | Unit | Results & Grading | Calculate GPA for a standard subject score | System configuration loaded | Subject Mark: 85 (out of 100) | GPA returned: 3.6, Grade: A | GPA returned: 3.6, Grade: A | Pass | 2026-07-15 | GPA calculation matches NEB grading scale |
+| UT-002 | Unit | Results & Grading | Handle out-of-bound marks | None | Subject Mark: 105 | Error/Exception: Invalid mark range | Error thrown: "Mark out of valid range (0-100)" | Pass | 2026-07-15 | Boundary validation working correctly |
+| UT-003 | Unit | Fee Management | Calculate fee with penalty days | Fee rule defined (Rs 10/day late) | Due: Jan 1, Paid: Jan 10 (9 days late), Base: 1000 | Total Fee returned: 1090 | Total Fee returned: 1090 | Pass | 2026-07-16 | Late fee penalty calculated accurately |
+| UT-004 | Unit | Academic Year | Convert standard Nepali date to Gregorian | Date utility initialized | BS Date: 2080-01-01 | AD Date: 2023-04-14 | AD Date: 2023-04-14 | Pass | 2026-07-16 | BS-AD mapping verified against calendar |
+| UT-005 | Unit | Authentication | Ensure passwords are securely hashed | Cryptography module active | Plaintext password: "SecurePass123" | Returns 64-character hash, not plain text | Returns 64-char SHA-256 hash string | Pass | 2026-07-17 | Hash output verified, no plaintext leakage |
+| UT-006 | Unit | Certificates | Check if QR payload contains correct student ID | Student data loaded | Student ID: "ST-2023-001" | Payload string: "verify:ST-2023-001" | Payload string: "verify:ST-2023-001" | Pass | 2026-07-17 | QR payload format matches specification |

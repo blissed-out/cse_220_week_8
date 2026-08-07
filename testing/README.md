@@ -15,5 +15,5 @@ We follow a structured approach encompassing four levels of testing:
 ## Tools & Approach
 
 - **Manual Testing**: Documented test cases will be executed manually initially to verify functionality against requirements.
-- **Test Case Structure**: Each test case includes a unique ID, objective, preconditions, inputs, and expected outputs.
+- **Test Case Structure**: Each test case includes a unique ID, description, preconditions, inputs, expected outputs, actual outputs, status, date, and comments.
 - **Coverage**: We ensure coverage across all major modules including Authentication, Attendance, Results, Fees, Certificates, Admission, Notices, AI Features, Dashboards, and the Public Website.

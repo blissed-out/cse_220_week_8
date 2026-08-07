@@ -28,7 +28,7 @@ Contains UML diagrams including use case diagrams, class diagrams, sequence diag
 
 ### `/testing`
 
-Contains test plans and results for unit testing, integration testing, system testing, and user acceptance testing. Each test includes inputs, expected outputs, actual outputs, and test objectives.
+Contains test plans and results for unit testing, integration testing, system testing, and user acceptance testing. Each test includes inputs, expected outputs, actual outputs, status, date, comments, and test descriptions.
 
 ## Testing
 
