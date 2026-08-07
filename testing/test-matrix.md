@@ -1,0 +1,25 @@
+# Consolidated Test Matrix
+
+| Test ID | Test Level | Module | Test Objective | Test Description | Preconditions | Test Input | Expected Output | Actual Output | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| UT-001 | Unit | Results & Grading | Verify NEB GPA calculation for valid marks | Calculate GPA for a standard subject score | System configuration loaded | Subject Mark: 85 (out of 100) | GPA returned: 3.6, Grade: A | | |
+| UT-002 | Unit | Results & Grading | Verify GPA calculation for invalid marks | Handle out-of-bound marks | None | Subject Mark: 105 | Error/Exception: Invalid mark range | | |
+| UT-003 | Unit | Fee Management | Verify late fee computation | Calculate fee with penalty days | Fee rule defined (Rs 10/day late) | Due: Jan 1, Paid: Jan 10 (9 days late), Base: 1000 | Total Fee returned: 1090 | | |
+| UT-004 | Unit | Academic Year | Verify BS to AD date conversion | Convert standard Nepali date to Gregorian | Date utility initialized | BS Date: 2080-01-01 | AD Date: 2023-04-14 | | |
+| UT-005 | Unit | Authentication | Verify password hashing | Ensure passwords are securely hashed | Cryptography module active | Plaintext password: "SecurePass123" | Returns 64-character hash, not plain text | | |
+| UT-006 | Unit | Certificates | Verify QR Code string generation | Check if QR payload contains correct student ID | Student data loaded | Student ID: "ST-2023-001" | Payload string: "verify:ST-2023-001" | | |
+| IT-001 | Integration | Attendance & Dashboard | Verify attendance updates dashboard | Mark attendance and check if dashboard stats update | Teacher logged in, class assigned | Mark 'Present' for 30 students in Class 10A | Admin dashboard shows '30 Present' for 10A | | |
+| IT-002 | Integration | Fees & Notification | Verify fee payment triggers receipt | Pay fee via Khalti and check receipt generation | Student has pending fee, Khalti API mocked | Payment Success payload | Receipt PDF generated and saved to DB | | |
+| IT-003 | Integration | Results & Notification | Verify result publishing notifies students | Change result status to published | Result is in 'verified' state | Admin clicks 'Publish Results' | App notification sent to respective students | | |
+| IT-004 | Integration | AI Features & Results | Verify AI quiz generation stores results | Generate quiz and save to database | AI service connected | Admin enters topic 'Science' | Quiz JSON generated and successfully saved | | |
+| IT-005 | Integration | Auth & Session | Verify brute-force login protection | Lock account after multiple failed attempts | User exists in DB | 5 incorrect login attempts consecutively | Account locked for 15 mins, API returns 429 | | |
+| ST-001 | System | Admission | Verify full admission lifecycle | End-to-end admission from public form to student account creation | System running, no existing email | Fill form -> Admin Approves -> Auto-generate login | Student account created, welcome email sent | | |
+| ST-002 | System | Results | Verify end-to-end result lifecycle | Draft -> Submitted -> Verified -> Published | Teacher & Principal accounts active | Enter marks -> Submit -> Principal Verifies -> Admin Publishes | Results visible on student portal | | |
+| ST-003 | System | Fees | Verify end-to-end fee payment flow | Invoice generation to online payment to receipt | Academic year active, Fee structure set | Generate invoice -> Parent pays via eSewa -> Success | Invoice marked 'Paid', receipt available | | |
+| ST-004 | System | Reporting | Verify IEMIS data export | Generate compliant data export | Data exists for current year | Admin clicks 'Export IEMIS' | CSV file downloaded with correct format/headers | | |
+| ST-005 | System | System Wide | Verify 30-day soft delete recovery | Delete a record and restore it | Record exists (e.g., Notice) | Delete Notice -> Go to Trash -> Restore | Notice is visible again in main list | | |
+| UAT-001 | UAT | Attendance | Verify teacher can mark attendance easily | "As a teacher, I can mark attendance for my class in under 3 clicks" | Teacher logged into mobile app | Open app -> Select Class -> Click 'Submit Attendance' | Attendance saved successfully | | |
+| UAT-002 | UAT | Dashboard | Verify parent view data isolation | "As a parent, I only see my own child's data" | Parent has 1 child registered | Login as Parent | Dashboard displays only data for specific child | | |
+| UAT-003 | UAT | Public Website | Verify public homepage load time | "As a visitor, the homepage loads in under 3 seconds" | Standard network connection | Navigate to homepage URL | Page fully renders in < 3 seconds | | |
+| UAT-004 | UAT | Certificates | Verify principal can bulk generate IDs | "As a principal, I can generate ID cards for a whole class at once" | Class has 40 students enrolled | Select Class 10 -> Click 'Generate IDs' | Single PDF with 40 ID cards generated | | |
+| UAT-005 | UAT | Authentication | Verify cross-platform login | "As a student, I can use the same credentials on web and mobile app" | Student account exists | Login on Web, then Login on Mobile | Both logins succeed and show consistent data | | |
