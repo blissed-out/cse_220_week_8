@@ -1,0 +1,9 @@
+# User Acceptance Tests (UAT)
+
+| Test ID | Test Level | Module | Test Objective | Test Description | Preconditions | Test Input | Expected Output | Actual Output | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| UAT-001 | UAT | Attendance | Verify teacher can mark attendance easily | "As a teacher, I can mark attendance for my assigned school class in under 3 clicks" | Teacher logged into mobile app with school-scoped account | Open app -> Select Class -> Click 'Submit Attendance' | Attendance saved successfully for the selected class within that school boundary | | |
+| UAT-002 | UAT | Dashboard | Verify parent view data isolation | "As a parent, I only see my own child's data within my school's boundary" | Parent has 1 child registered in School A | Login as Parent | Dashboard displays only the registered child's School A data and blocks access to School B data | | |
+| UAT-003 | UAT | Public Website | Verify public homepage load time | "As a visitor, the homepage loads in under 3 seconds" | Standard network connection | Navigate to homepage URL | Page fully renders in < 3 seconds | | |
+| UAT-004 | UAT | Certificates | Verify principal can bulk generate IDs | "As a principal, I can generate ID cards for a whole class at once within my school boundary" | Class has 40 students enrolled in principal's school | Select Class 10 -> Click 'Generate IDs' | Single PDF with 40 ID cards generated only for the selected school class | | |
+| UAT-005 | UAT | Authentication | Verify cross-platform login | "As a student, I can use the same credentials on web and mobile app for my school account" | Student account exists in one school tenant | Login on Web, then Login on Mobile | Both logins succeed and show consistent data only for that school account | | |
