@@ -4,11 +4,11 @@ A comprehensive school management system developed as part of CSE 220.
 
 ## Team Members
 
-| Name            | Role |
-| --------------- | ---- |
-| Aadarsh Banjade |      |
-| Sijan Budha     |      |
-| Nihal Zapaliya  |      |
+| Name            | Role      |
+| --------------- | --------- |
+| Aadarsh Banjade | Developer |
+| Sijan Budha     | Tester    |
+| Nihal Zapaliya  | Designer  |
 
 ## Project Structure
 
