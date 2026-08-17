@@ -8,7 +8,7 @@ A comprehensive school management system developed as part of CSE 220.
 | --------------- | --------- |
 | Aadarsh Banjade | Developer |
 | Sijan Budha     | Tester    |
-| Nihal Zapaliya  | Designer  |
+| Nihal Zapaliya  | Project Manager  |
 
 ## Project Structure
 
