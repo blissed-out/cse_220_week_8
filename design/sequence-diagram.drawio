@@ -1,90 +1,83 @@
-<?xml version="1.0" ?>
-<mxfile host="Electron" modified="2026-07-28T08:00:00.000Z" agent="Mozilla/5.0" version="24.7.8" etag="sequence-diagram" type="device">
+<mxfile host="Electron" agent="Mozilla/5.0">
   <diagram id="sequence-diagram" name="Sequence Diagram">
-    <mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="800" background="#FFFFFF" math="0" shadow="0">
+    <mxGraphModel dx="790" dy="721" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#FFFFFF" math="0" shadow="0">
       <root>
-        <mxCell id="0"/>
-        <mxCell id="1" parent="0"/>
-
-        <mxCell id="2" value="Teacher" style="shape=umlLifeline;html=1;shadow=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#FADBD8;strokeColor=#C0392B;fontColor=#7B241C;" vertex="1" parent="1">
-          <mxGeometry x="60" y="40" width="110" height="620" as="geometry"/>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="shape=umlLifeline;html=1;shadow=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#FADBD8;strokeColor=#C0392B;fontColor=#7B241C;" value="Teacher" vertex="1">
+          <mxGeometry height="600" width="110" x="20" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="3" value="AttendancePage" style="shape=umlLifeline;html=1;shadow=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#DAE8FC;strokeColor=#4A6FA5;fontColor=#1A365D;" vertex="1" parent="1">
-          <mxGeometry x="260" y="40" width="110" height="620" as="geometry"/>
+        <mxCell id="3" parent="1" style="shape=umlLifeline;html=1;shadow=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#DAE8FC;strokeColor=#4A6FA5;fontColor=#1A365D;" value=":AttendancePage" vertex="1">
+          <mxGeometry height="600" width="120" x="230" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="4" value="Controller" style="shape=umlLifeline;html=1;shadow=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#D5F5E3;strokeColor=#27AE60;fontColor=#1A5C32;" vertex="1" parent="1">
-          <mxGeometry x="470" y="40" width="110" height="620" as="geometry"/>
+        <mxCell id="4" parent="1" style="shape=umlLifeline;html=1;shadow=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#D5F5E3;strokeColor=#27AE60;fontColor=#1A5C32;" value=":SupabaseClient" vertex="1">
+          <mxGeometry height="600" width="120" x="480" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="5" value="Database" style="shape=umlLifeline;html=1;shadow=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#FDEBD0;strokeColor=#D4873A;fontColor=#6B4226;" vertex="1" parent="1">
-          <mxGeometry x="680" y="40" width="110" height="620" as="geometry"/>
+        <mxCell id="5" parent="1" style="shape=umlLifeline;html=1;shadow=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#FDEBD0;strokeColor=#D4873A;fontColor=#6B4226;" value=":PostgresDB" vertex="1">
+          <mxGeometry height="600" width="120" x="710" y="40" as="geometry" />
         </mxCell>
-
-        <mxCell id="14" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6C8EBF;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="306" y="190" width="18" height="860" as="geometry"/>
+        <mxCell id="14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6C8EBF;strokeColor=#4A6FA5;" vertex="1">
+          <mxGeometry height="420" width="16" x="282" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="15" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#239B56;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="516" y="340" width="18" height="440" as="geometry"/>
+        <mxCell id="15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#239B56;strokeColor=#1A7A3E;" vertex="1">
+          <mxGeometry height="160" width="16" x="532" y="330" as="geometry" />
         </mxCell>
-        <mxCell id="16" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B9770E;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="726" y="420" width="18" height="220" as="geometry"/>
+        <mxCell id="16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B9770E;strokeColor=#9A5F0A;" vertex="1">
+          <mxGeometry height="80" width="16" x="762" y="380" as="geometry" />
         </mxCell>
-
-        <mxCell id="6" value="Select class &amp; date" style="html=1;rounded=0;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+        <mxCell id="6" edge="1" parent="1" source="2" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;exitX=0.494;exitY=0.168;exitDx=0;exitDy=0;exitPerimeter=0;" value="selectClassAndDate()">
           <mxGeometry as="geometry">
-            <mxPoint x="115" y="190" as="sourcePoint"/>
-            <mxPoint x="306" y="190" as="targetPoint"/>
+            <mxPoint x="115" y="140" as="sourcePoint" />
+            <mxPoint x="280" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="7" value="Mark attendance" style="html=1;rounded=0;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+        <mxCell id="7" edge="1" parent="1" source="2" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;exitX=0.526;exitY=0.3;exitDx=0;exitDy=0;exitPerimeter=0;" value="markAttendance(status)">
           <mxGeometry as="geometry">
-            <mxPoint x="115" y="300" as="sourcePoint"/>
-            <mxPoint x="306" y="300" as="targetPoint"/>
+            <mxPoint x="115" y="220" as="sourcePoint" />
+            <mxPoint x="280" y="220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="8" value="Submit" style="html=1;rounded=0;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+        <mxCell id="8" edge="1" parent="1" source="2" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;exitX=0.51;exitY=0.433;exitDx=0;exitDy=0;exitPerimeter=0;" value="clickSubmit()">
           <mxGeometry as="geometry">
-            <mxPoint x="115" y="380" as="sourcePoint"/>
-            <mxPoint x="306" y="380" as="targetPoint"/>
+            <mxPoint x="115" y="300" as="sourcePoint" />
+            <mxPoint x="280" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="9" value="POST /mark-attendance" style="html=1;rounded=0;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+        <mxCell id="9" edge="1" parent="1" source="14" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="upsert(attendanceData, { onConflict: &#39;student_id, date&#39; })">
           <mxGeometry as="geometry">
-            <mxPoint x="324" y="340" as="sourcePoint"/>
-            <mxPoint x="516" y="340" as="targetPoint"/>
+            <mxPoint x="5" y="-20" as="offset" />
+            <mxPoint x="318" y="340" as="sourcePoint" />
+            <mxPoint x="532" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="10" value="upsert records" style="html=1;rounded=0;fontSize=10;endArrow=open;endFill=0;" edge="1" parent="1">
+        <mxCell id="19" parent="1" style="shape=note;size=14;html=1;shadow=1;strokeWidth=1;fontSize=9;fillColor=#FFF2CC;strokeColor=#D4873A;fontColor=#6B4226;whiteSpace=wrap;align=left;" value="JWT session token&#xa;passed automatically&#xa;by SupabaseClient" vertex="1">
+          <mxGeometry height="60" width="155" x="330" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;" value="UPSERT query (RLS: auth.uid())">
           <mxGeometry as="geometry">
-            <mxPoint x="534" y="420" as="sourcePoint"/>
-            <mxPoint x="726" y="420" as="targetPoint"/>
+            <mxPoint x="548" y="390" as="sourcePoint" />
+            <mxPoint x="762" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="11" value="success" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1">
+        <mxCell id="11" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;" value="query success / data">
           <mxGeometry as="geometry">
-            <mxPoint x="726" y="600" as="sourcePoint"/>
-            <mxPoint x="534" y="600" as="targetPoint"/>
+            <mxPoint x="762" y="450" as="sourcePoint" />
+            <mxPoint x="548" y="450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="12" value="{success: true}" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1">
+        <mxCell id="12" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;" value="{ data, error: null }">
           <mxGeometry as="geometry">
-            <mxPoint x="516" y="660" as="sourcePoint"/>
-            <mxPoint x="324" y="660" as="targetPoint"/>
+            <mxPoint x="532" y="490" as="sourcePoint" />
+            <mxPoint x="318" y="490" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="13" value="Attendance saved" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1">
+        <mxCell id="13" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;entryX=0.502;entryY=0.836;entryDx=0;entryDy=0;entryPerimeter=0;" target="2" value="Display &quot;Attendance saved successfully&quot;">
           <mxGeometry as="geometry">
-            <mxPoint x="306" y="1050" as="sourcePoint"/>
-            <mxPoint x="115" y="1050" as="targetPoint"/>
+            <mxPoint x="-9" y="-20" as="offset" />
+            <mxPoint x="280" y="541.6" as="sourcePoint" />
+            <mxPoint x="115" y="540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
       </root>
     </mxGraphModel>
   </diagram>
