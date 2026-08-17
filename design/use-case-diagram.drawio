@@ -4,109 +4,109 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=default;strokeWidth=2;verticalAlign=top;align=center;fontStyle=1;fontSize=16;fontColor=#333333;" value="School Management System" vertex="1">
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;verticalAlign=top;align=center;fontStyle=1;fontSize=16;fontColor=#000000;" value="School Management System" vertex="1">
           <mxGeometry height="1020" width="620" x="280" y="20" as="geometry" />
         </mxCell>
-        <mxCell id="a_visitor" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;" value="Visitor" vertex="1">
+        <mxCell id="a_visitor" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=#000000;fontColor=#000000;" value="Visitor" vertex="1">
           <mxGeometry height="50" width="30" x="90" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="a_portal" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;" value="Portal User" vertex="1">
+        <mxCell id="a_portal" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=#000000;fontColor=#000000;" value="Portal User" vertex="1">
           <mxGeometry height="50" width="30" x="90" y="290" as="geometry" />
         </mxCell>
-        <mxCell id="a_student" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;" value="Student" vertex="1">
+        <mxCell id="a_student" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=#000000;fontColor=#000000;" value="Student" vertex="1">
           <mxGeometry height="50" width="30" x="20" y="450" as="geometry" />
         </mxCell>
-        <mxCell id="a_parent" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;" value="Parent" vertex="1">
+        <mxCell id="a_parent" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=#000000;fontColor=#000000;" value="Parent" vertex="1">
           <mxGeometry height="50" width="30" x="160" y="450" as="geometry" />
         </mxCell>
-        <mxCell id="a_teacher" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;" value="Teacher" vertex="1">
+        <mxCell id="a_teacher" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=#000000;fontColor=#000000;" value="Teacher" vertex="1">
           <mxGeometry height="50" width="30" x="90" y="600" as="geometry" />
         </mxCell>
-        <mxCell id="a_admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;" value="Admin" vertex="1">
+        <mxCell id="a_admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=#000000;fontColor=#000000;" value="Admin" vertex="1">
           <mxGeometry height="50" width="30" x="90" y="780" as="geometry" />
         </mxCell>
-        <mxCell id="a_accountant" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=default;" value="Accountant" vertex="1">
+        <mxCell id="a_accountant" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=13;strokeColor=#000000;fontColor=#000000;" value="Accountant" vertex="1">
           <mxGeometry height="50" width="30" x="90" y="950" as="geometry" />
         </mxCell>
-        <mxCell id="uc_homepage" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Browse School Information" vertex="1">
+        <mxCell id="uc_homepage" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;whiteSpace=wrap;fontColor=#000000;" value="Browse School Information" vertex="1">
           <mxGeometry height="50" width="170" x="370" y="70" as="geometry" />
         </mxCell>
-        <mxCell id="uc_review" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Write Review" vertex="1">
+        <mxCell id="uc_review" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;whiteSpace=wrap;fontColor=#000000;" value="Write Review" vertex="1">
           <mxGeometry height="50" width="170" x="370" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="uc_payfees" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Pay Fees Online" vertex="1">
+        <mxCell id="uc_payfees" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;whiteSpace=wrap;fontColor=#000000;" value="Pay Fees Online" vertex="1">
           <mxGeometry height="50" width="170" x="370" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="uc_results" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="View Results" vertex="1">
+        <mxCell id="uc_results" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;whiteSpace=wrap;fontColor=#000000;" value="View Results" vertex="1">
           <mxGeometry height="50" width="170" x="370" y="350" as="geometry" />
         </mxCell>
-        <mxCell id="uc_attendance" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Mark Attendance" vertex="1">
+        <mxCell id="uc_attendance" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;whiteSpace=wrap;fontColor=#000000;" value="Mark Attendance" vertex="1">
           <mxGeometry height="50" width="170" x="370" y="550" as="geometry" />
         </mxCell>
-        <mxCell id="uc_manageresults" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Manage Results" vertex="1">
+        <mxCell id="uc_manageresults" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;whiteSpace=wrap;fontColor=#000000;" value="Manage Results" vertex="1">
           <mxGeometry height="50" width="170" x="370" y="650" as="geometry" />
         </mxCell>
-        <mxCell id="uc_manageusers" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Manage Users" vertex="1">
+        <mxCell id="uc_manageusers" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;whiteSpace=wrap;fontColor=#000000;" value="Manage Users" vertex="1">
           <mxGeometry height="50" width="170" x="370" y="730" as="geometry" />
         </mxCell>
-        <mxCell id="uc_dashboard" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Monitor School Analytics" vertex="1">
+        <mxCell id="uc_dashboard" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;whiteSpace=wrap;fontColor=#000000;" value="Monitor School Analytics" vertex="1">
           <mxGeometry height="50" width="170" x="620" y="760" as="geometry" />
         </mxCell>
-        <mxCell id="uc_academicyear" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Manage Academic Year" vertex="1">
+        <mxCell id="uc_academicyear" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;whiteSpace=wrap;fontColor=#000000;" value="Manage Academic Year" vertex="1">
           <mxGeometry height="50" width="180" x="365" y="870" as="geometry" />
         </mxCell>
-        <mxCell id="uc_gendocs" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Generate Documents" vertex="1">
+        <mxCell id="uc_gendocs" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;whiteSpace=wrap;fontColor=#000000;" value="Generate Documents" vertex="1">
           <mxGeometry height="50" width="170" x="620" y="850" as="geometry" />
         </mxCell>
-        <mxCell id="uc_managefees" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;whiteSpace=wrap;" value="Manage Fees" vertex="1">
+        <mxCell id="uc_managefees" parent="1" style="ellipse;shape=ellipse;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;whiteSpace=wrap;fontColor=#000000;" value="Manage Fees" vertex="1">
           <mxGeometry height="50" width="170" x="370" y="940" as="geometry" />
         </mxCell>
-        <mxCell id="e_vis_home" edge="1" parent="1" source="a_visitor" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=default;" target="uc_homepage">
+        <mxCell id="e_vis_home" edge="1" parent="1" source="a_visitor" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#000000;" target="uc_homepage">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_vis_review" edge="1" parent="1" source="a_visitor" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=default;" target="uc_review">
+        <mxCell id="e_vis_review" edge="1" parent="1" source="a_visitor" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#000000;" target="uc_review">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_portal_pay" edge="1" parent="1" source="a_portal" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=default;" target="uc_payfees">
+        <mxCell id="e_portal_pay" edge="1" parent="1" source="a_portal" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#000000;" target="uc_payfees">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_portal_results" edge="1" parent="1" source="a_portal" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=default;" target="uc_results">
+        <mxCell id="e_portal_results" edge="1" parent="1" source="a_portal" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#000000;" target="uc_results">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="gen_student" edge="1" parent="1" source="a_student" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=16;strokeColor=default;">
+        <mxCell id="gen_student" edge="1" parent="1" source="a_student" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=16;strokeColor=#000000;">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
             <mxPoint x="80" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="gen_parent" edge="1" parent="1" source="a_parent" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=16;strokeColor=default;">
+        <mxCell id="gen_parent" edge="1" parent="1" source="a_parent" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=16;strokeColor=#000000;">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
             <mxPoint x="120" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e_teacher_att" edge="1" parent="1" source="a_teacher" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=default;" target="uc_attendance">
+        <mxCell id="e_teacher_att" edge="1" parent="1" source="a_teacher" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#000000;" target="uc_attendance">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_teacher_res" edge="1" parent="1" source="a_teacher" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=default;" target="uc_manageresults">
+        <mxCell id="e_teacher_res" edge="1" parent="1" source="a_teacher" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#000000;" target="uc_manageresults">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_admin_results" edge="1" parent="1" source="a_admin" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=default;" target="uc_manageresults">
+        <mxCell id="e_admin_results" edge="1" parent="1" source="a_admin" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#000000;" target="uc_manageresults">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_admin_users" edge="1" parent="1" source="a_admin" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=default;" target="uc_manageusers">
+        <mxCell id="e_admin_users" edge="1" parent="1" source="a_admin" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#000000;" target="uc_manageusers">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_admin_dash" edge="1" parent="1" source="a_admin" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=default;" target="uc_dashboard">
+        <mxCell id="e_admin_dash" edge="1" parent="1" source="a_admin" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#000000;" target="uc_dashboard">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_admin_year" edge="1" parent="1" source="a_admin" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=default;" target="uc_academicyear">
+        <mxCell id="e_admin_year" edge="1" parent="1" source="a_admin" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#000000;" target="uc_academicyear">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_admin_docs" edge="1" parent="1" source="a_admin" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=default;" target="uc_gendocs">
+        <mxCell id="e_admin_docs" edge="1" parent="1" source="a_admin" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#000000;" target="uc_gendocs">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_acct_fees" edge="1" parent="1" source="a_accountant" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=default;" target="uc_managefees">
+        <mxCell id="e_acct_fees" edge="1" parent="1" source="a_accountant" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#000000;" target="uc_managefees">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
