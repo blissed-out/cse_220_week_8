@@ -8,10 +8,10 @@
 
 ## 2. Security
 
-- All passwords must be stored securely and never visible to anyone.
-- Each school can only see its own data. A school must never see another school's data.
-- Only logged-in users can access dashboards and features.
-- The login page must be protected from repeated failed login attempts.
+- **Authentication and Security**: The system uses Supabase Auth for login and session management. Supabase handles secure password hashing (using bcrypt), while role-based access is enforced using application roles and Supabase Row Level Security (RLS).
+- Each school can only see its own data through Supabase Row Level Security (RLS) policies. A school must never see another school's data.
+- Only logged-in users with valid JWT session tokens can access dashboards and authorized features.
+- The login page and auth endpoints must be protected from repeated failed login attempts via rate limiting.
 
 ## 3. Reliability
 

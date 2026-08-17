@@ -4,11 +4,11 @@ A comprehensive school management system developed as part of CSE 220.
 
 ## Team Members
 
-| Name            | Role |
-| --------------- | ---- |
-| Aadarsh Banjade |      |
-| Sijan Budha     |      |
-| Nihal Zapaliya  |      |
+| Name            | Role      |
+| --------------- | --------- |
+| Aadarsh Banjade | Developer |
+| Sijan Budha     | Tester    |
+| Nihal Zapaliya  | Designer  |
 
 ## Project Structure
 
@@ -28,7 +28,7 @@ Contains UML diagrams including use case diagrams, class diagrams, sequence diag
 
 ### `/testing`
 
-Contains test plans and results for unit testing, integration testing, system testing, and user acceptance testing. Each test includes inputs, expected outputs, actual outputs, and test objectives.
+Contains test plans and results for unit testing, integration testing, system testing, and user acceptance testing. Each test includes inputs, expected outputs, actual outputs, status, date, comments, and test descriptions.
 
 ## Testing
 
