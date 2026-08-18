@@ -67,3 +67,8 @@
 | FR-38 | Dashboard | Admin and Principal shall see an overview of attendance, results, and fee data. |
 | FR-39 | Dashboard | Teachers shall see their classes, schedules, and attendance tasks. |
 | FR-40 | Dashboard | Students shall see their own results, attendance records, and notices. |
+| FR-41 | Results & Grading | The system shall send a push/app notification to students and parents when results are published. |
+| FR-42 | Admission Management | The system shall automatically create a student account with generated login credentials upon admission approval and send them by email. |
+| FR-43 | Data Management | The system shall soft-delete records and allow restoring them from trash for at least 30 days. |
+| FR-44 | Dashboard | The system shall show admins a consolidated student profile with personal details, marksheet, certificates, attendance, and fees. |
+| FR-45 | Dashboard | The system shall provide a global search for students and records from the dashboard. |
