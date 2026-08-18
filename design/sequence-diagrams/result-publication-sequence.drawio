@@ -1,0 +1,190 @@
+<mxfile host="Electron" agent="Mozilla/5.0">
+  <diagram id="result-publication-sequence" name="Result Publication Sequence Diagram">
+    <mxGraphModel dx="1100" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1050" pageHeight="850" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ===== UML ACTOR STICK FIGURES ===== -->
+        <mxCell id="icon_teacher" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeWidth=1.5;strokeColor=#000000;fillColor=#ffffff;" vertex="1">
+          <mxGeometry height="45" width="25" x="62" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="icon_admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeWidth=1.5;strokeColor=#000000;fillColor=#ffffff;" vertex="1">
+          <mxGeometry height="45" width="25" x="212" y="15" as="geometry" />
+        </mxCell>
+
+        <!-- ===== LIFELINES (Human Actors on Left, System Boundaries on Right) ===== -->
+        <!-- External human actors remain simple dashed lines with no activation boxes per UML conventions -->
+        <mxCell id="2" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="Teacher" vertex="1">
+          <mxGeometry height="720" width="110" x="20" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="Admin" vertex="1">
+          <mxGeometry height="720" width="110" x="170" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":ResultsPage" vertex="1">
+          <mxGeometry height="720" width="130" x="370" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":SupabaseClient" vertex="1">
+          <mxGeometry height="720" width="130" x="610" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":PostgresDB" vertex="1">
+          <mxGeometry height="720" width="130" x="850" y="65" as="geometry" />
+        </mxCell>
+
+        <!-- ===== PHASE 1 ACTIVATION BARS: Submit Draft (System components only) ===== -->
+        <mxCell id="act_page1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="170" width="16" x="427" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="act_client1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="115" width="16" x="667" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="act_db1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="45" width="16" x="907" y="170" as="geometry" />
+        </mxCell>
+
+        <!-- ===== PHASE 1 MESSAGES ===== -->
+        <mxCell id="m1" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="submitDraft(classId, subjectId, marks[])">
+          <mxGeometry as="geometry">
+            <mxPoint x="75" y="140" as="sourcePoint" />
+            <mxPoint x="427" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="upsert('exam_results', { classId, subjectId, marks, status: 'draft' })">
+          <mxGeometry as="geometry">
+            <mxPoint x="5" y="-20" as="offset" />
+            <mxPoint x="443" y="160" as="sourcePoint" />
+            <mxPoint x="667" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="UPSERT INTO exam_results (class_id, subject_id, marks, status='draft')">
+          <mxGeometry as="geometry">
+            <mxPoint x="683" y="180" as="sourcePoint" />
+            <mxPoint x="907" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="query success / row data">
+          <mxGeometry as="geometry">
+            <mxPoint x="907" y="205" as="sourcePoint" />
+            <mxPoint x="683" y="205" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="{ data, error: null }">
+          <mxGeometry as="geometry">
+            <mxPoint x="667" y="240" as="sourcePoint" />
+            <mxPoint x="443" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="Display &quot;Results saved as draft&quot;">
+          <mxGeometry as="geometry">
+            <mxPoint x="-9" y="-20" as="offset" />
+            <mxPoint x="427" y="280" as="sourcePoint" />
+            <mxPoint x="75" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ===== PHASE 2 ACTIVATION BARS: Admin Verifies Draft Results (Explicit Fetch) ===== -->
+        <mxCell id="act_page2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="170" width="16" x="427" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="act_client2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="115" width="16" x="667" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="act_db2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="45" width="16" x="907" y="380" as="geometry" />
+        </mxCell>
+
+        <!-- ===== PHASE 2 MESSAGES ===== -->
+        <mxCell id="m7" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="verifyResults(classId, subjectId)">
+          <mxGeometry as="geometry">
+            <mxPoint x="225" y="350" as="sourcePoint" />
+            <mxPoint x="427" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m8" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="select('exam_results').match({ classId, subjectId, status: 'draft' })">
+          <mxGeometry as="geometry">
+            <mxPoint x="5" y="-20" as="offset" />
+            <mxPoint x="443" y="370" as="sourcePoint" />
+            <mxPoint x="667" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="SELECT * FROM exam_results WHERE class_id=classId AND subject_id=subjectId AND status='draft'">
+          <mxGeometry as="geometry">
+            <mxPoint x="683" y="390" as="sourcePoint" />
+            <mxPoint x="907" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m10" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="draft results recordset">
+          <mxGeometry as="geometry">
+            <mxPoint x="907" y="415" as="sourcePoint" />
+            <mxPoint x="683" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m11" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="{ data: draftResults, error: null }">
+          <mxGeometry as="geometry">
+            <mxPoint x="667" y="450" as="sourcePoint" />
+            <mxPoint x="443" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m12" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="Display draft results for review">
+          <mxGeometry as="geometry">
+            <mxPoint x="-9" y="-20" as="offset" />
+            <mxPoint x="427" y="490" as="sourcePoint" />
+            <mxPoint x="225" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ===== PHASE 3 ACTIVATION BARS: Admin Publishes Results ===== -->
+        <mxCell id="act_page3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="170" width="16" x="427" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="act_client3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="115" width="16" x="667" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="act_db3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="45" width="16" x="907" y="590" as="geometry" />
+        </mxCell>
+
+        <!-- ===== PHASE 3 MESSAGES ===== -->
+        <mxCell id="m13" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="clickPublish(classId, subjectId)">
+          <mxGeometry as="geometry">
+            <mxPoint x="225" y="560" as="sourcePoint" />
+            <mxPoint x="427" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m14" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="update('exam_results', { status: 'published' }).match({ classId, subjectId })">
+          <mxGeometry as="geometry">
+            <mxPoint x="5" y="-20" as="offset" />
+            <mxPoint x="443" y="580" as="sourcePoint" />
+            <mxPoint x="667" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m15" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="UPDATE exam_results SET status='published' WHERE class_id=classId AND subject_id=subjectId">
+          <mxGeometry as="geometry">
+            <mxPoint x="683" y="600" as="sourcePoint" />
+            <mxPoint x="907" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m16" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="query success / updated data">
+          <mxGeometry as="geometry">
+            <mxPoint x="907" y="625" as="sourcePoint" />
+            <mxPoint x="683" y="625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m17" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="{ data, error: null }">
+          <mxGeometry as="geometry">
+            <mxPoint x="667" y="660" as="sourcePoint" />
+            <mxPoint x="443" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m18" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="Display &quot;Results published successfully&quot;">
+          <mxGeometry as="geometry">
+            <mxPoint x="-9" y="-20" as="offset" />
+            <mxPoint x="427" y="700" as="sourcePoint" />
+            <mxPoint x="225" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,152 @@
+<mxfile host="Electron" agent="Mozilla/5.0">
+  <diagram id="certificate-sequence" name="Certificate Sequence Diagram">
+    <mxGraphModel dx="900" dy="721" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="800" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- ===== LIFELINES ===== -->
+        <mxCell id="2" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="Admin" vertex="1">
+          <mxGeometry height="680" width="110" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":CertificatePage" vertex="1">
+          <mxGeometry height="680" width="130" x="220" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":SupabaseClient" vertex="1">
+          <mxGeometry height="680" width="130" x="460" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":PostgresDB" vertex="1">
+          <mxGeometry height="680" width="130" x="690" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":PDFGenerator" vertex="1">
+          <mxGeometry height="680" width="130" x="920" y="40" as="geometry" />
+        </mxCell>
+
+        <!-- ===== PHASE 1 ACTIVATION BARS: Select & Load Student ===== -->
+        <mxCell id="act_admin1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="130" width="16" x="67" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="act_page1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="110" width="16" x="277" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="act_client1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="70" width="16" x="517" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="act_db1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="35" width="16" x="747" y="170" as="geometry" />
+        </mxCell>
+
+        <!-- ===== PHASE 1 MESSAGES ===== -->
+        <mxCell id="m1" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="selectStudent(studentId)">
+          <mxGeometry as="geometry">
+            <mxPoint x="83" y="140" as="sourcePoint" />
+            <mxPoint x="277" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="select('students').eq('id', studentId)">
+          <mxGeometry as="geometry">
+            <mxPoint x="5" y="-20" as="offset" />
+            <mxPoint x="293" y="160" as="sourcePoint" />
+            <mxPoint x="517" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="SELECT student details">
+          <mxGeometry as="geometry">
+            <mxPoint x="533" y="180" as="sourcePoint" />
+            <mxPoint x="747" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="student record">
+          <mxGeometry as="geometry">
+            <mxPoint x="747" y="195" as="sourcePoint" />
+            <mxPoint x="533" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="{ data: studentInfo }">
+          <mxGeometry as="geometry">
+            <mxPoint x="517" y="215" as="sourcePoint" />
+            <mxPoint x="293" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="Display student details &amp; certificate options">
+          <mxGeometry as="geometry">
+            <mxPoint x="277" y="235" as="sourcePoint" />
+            <mxPoint x="83" y="235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ===== PHASE 2 ACTIVATION BARS: Configure & Preview ===== -->
+        <mxCell id="act_admin2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="150" width="16" x="67" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="act_page2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="130" width="16" x="277" y="300" as="geometry" />
+        </mxCell>
+
+        <!-- ===== PHASE 2 MESSAGES ===== -->
+        <mxCell id="m7" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="chooseCertType(transfer / character)">
+          <mxGeometry as="geometry">
+            <mxPoint x="83" y="315" as="sourcePoint" />
+            <mxPoint x="277" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m8" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="enterDetails(remarks, dates)">
+          <mxGeometry as="geometry">
+            <mxPoint x="83" y="350" as="sourcePoint" />
+            <mxPoint x="277" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="clickPreview()">
+          <mxGeometry as="geometry">
+            <mxPoint x="83" y="385" as="sourcePoint" />
+            <mxPoint x="277" y="385" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m10" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="Display certificate preview">
+          <mxGeometry as="geometry">
+            <mxPoint x="277" y="420" as="sourcePoint" />
+            <mxPoint x="83" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ===== PHASE 3 ACTIVATION BARS: Generate PDF & Download ===== -->
+        <mxCell id="act_admin3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="130" width="16" x="67" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="act_page3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="110" width="16" x="277" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="act_pdf3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="50" width="16" x="977" y="520" as="geometry" />
+        </mxCell>
+
+        <!-- ===== PHASE 3 MESSAGES ===== -->
+        <mxCell id="m11" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="clickGeneratePDF()">
+          <mxGeometry as="geometry">
+            <mxPoint x="83" y="505" as="sourcePoint" />
+            <mxPoint x="277" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m12" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="generatePDF(certData, template)">
+          <mxGeometry as="geometry">
+            <mxPoint x="5" y="-20" as="offset" />
+            <mxPoint x="293" y="530" as="sourcePoint" />
+            <mxPoint x="977" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m13" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="{ pdfBlob }">
+          <mxGeometry as="geometry">
+            <mxPoint x="977" y="555" as="sourcePoint" />
+            <mxPoint x="293" y="555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m14" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="Download PDF certificate (pdfBlob)">
+          <mxGeometry as="geometry">
+            <mxPoint x="277" y="585" as="sourcePoint" />
+            <mxPoint x="83" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
