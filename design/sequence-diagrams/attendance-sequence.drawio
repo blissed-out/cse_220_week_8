@@ -1,0 +1,84 @@
+<mxfile host="Electron" agent="Mozilla/5.0">
+  <diagram id="sequence-diagram" name="Sequence Diagram">
+    <mxGraphModel dx="790" dy="721" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="Teacher" vertex="1">
+          <mxGeometry height="600" width="110" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":AttendancePage" vertex="1">
+          <mxGeometry height="600" width="120" x="230" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":SupabaseClient" vertex="1">
+          <mxGeometry height="600" width="120" x="480" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":PostgresDB" vertex="1">
+          <mxGeometry height="600" width="120" x="710" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="420" width="16" x="282" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="160" width="16" x="532" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="80" width="16" x="762" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="6" edge="1" parent="1" source="2" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;exitX=0.494;exitY=0.168;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=#000000;strokeColor=#000000;" value="selectClassAndDate()">
+          <mxGeometry as="geometry">
+            <mxPoint x="115" y="140" as="sourcePoint" />
+            <mxPoint x="280" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7" edge="1" parent="1" source="2" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;exitX=0.526;exitY=0.3;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=#000000;strokeColor=#000000;" value="markAttendance(status)">
+          <mxGeometry as="geometry">
+            <mxPoint x="115" y="220" as="sourcePoint" />
+            <mxPoint x="280" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" source="2" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;exitX=0.51;exitY=0.433;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=#000000;strokeColor=#000000;" value="clickSubmit()">
+          <mxGeometry as="geometry">
+            <mxPoint x="115" y="300" as="sourcePoint" />
+            <mxPoint x="280" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" source="14" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#000000;strokeColor=#000000;" value="upsert(attendanceData, { onConflict: 'student_id, date' })">
+          <mxGeometry as="geometry">
+            <mxPoint x="5" y="-20" as="offset" />
+            <mxPoint x="318" y="340" as="sourcePoint" />
+            <mxPoint x="532" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" parent="1" style="shape=note;size=14;html=1;strokeWidth=1;fontSize=9;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;whiteSpace=wrap;align=left;" value="JWT session token&#10;passed automatically&#10;by SupabaseClient" vertex="1">
+          <mxGeometry height="60" width="155" x="330" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="UPSERT query (RLS: auth.uid())">
+          <mxGeometry as="geometry">
+            <mxPoint x="548" y="390" as="sourcePoint" />
+            <mxPoint x="762" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="query success / data">
+          <mxGeometry as="geometry">
+            <mxPoint x="762" y="450" as="sourcePoint" />
+            <mxPoint x="548" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="{ data, error: null }">
+          <mxGeometry as="geometry">
+            <mxPoint x="532" y="490" as="sourcePoint" />
+            <mxPoint x="318" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;entryX=0.502;entryY=0.836;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;strokeColor=#000000;" target="2" value="Display &quot;Attendance saved successfully&quot;">
+          <mxGeometry as="geometry">
+            <mxPoint x="-9" y="-20" as="offset" />
+            <mxPoint x="280" y="541.6" as="sourcePoint" />
+            <mxPoint x="115" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
