@@ -1,0 +1,99 @@
+<mxfile host="Electron" agent="Mozilla/5.0">
+  <diagram id="login-sequence" name="Login Sequence Diagram">
+    <mxGraphModel dx="900" dy="721" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="User" vertex="1">
+          <mxGeometry height="650" width="110" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":LoginPage" vertex="1">
+          <mxGeometry height="650" width="120" x="230" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":SupabaseAuth" vertex="1">
+          <mxGeometry height="650" width="120" x="480" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":PostgresDB" vertex="1">
+          <mxGeometry height="650" width="120" x="710" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="480" width="16" x="282" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="280" width="16" x="532" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="80" width="16" x="762" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="6" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="selectSchool()">
+          <mxGeometry as="geometry">
+            <mxPoint x="75" y="130" as="sourcePoint" />
+            <mxPoint x="282" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="enterCredentials(email, password)">
+          <mxGeometry as="geometry">
+            <mxPoint x="75" y="200" as="sourcePoint" />
+            <mxPoint x="282" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="clickLogin()">
+          <mxGeometry as="geometry">
+            <mxPoint x="75" y="270" as="sourcePoint" />
+            <mxPoint x="282" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="signInWithPassword({ email, password })">
+          <mxGeometry as="geometry">
+            <mxPoint x="5" y="-20" as="offset" />
+            <mxPoint x="298" y="310" as="sourcePoint" />
+            <mxPoint x="532" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="SELECT user WHERE email (verify hash)">
+          <mxGeometry as="geometry">
+            <mxPoint x="548" y="330" as="sourcePoint" />
+            <mxPoint x="762" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="user record / not found">
+          <mxGeometry as="geometry">
+            <mxPoint x="762" y="380" as="sourcePoint" />
+            <mxPoint x="548" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" parent="1" style="shape=note;size=14;html=1;strokeWidth=1;fontSize=9;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;whiteSpace=wrap;align=left;" value="Supabase issues JWT&#10;on successful auth" vertex="1">
+          <mxGeometry height="50" width="140" x="350" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="checkAccountStatus(userId)">
+          <mxGeometry as="geometry">
+            <mxPoint x="548" y="430" as="sourcePoint" />
+            <mxPoint x="762" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="60" width="16" x="762" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="{ active: true, role }">
+          <mxGeometry as="geometry">
+            <mxPoint x="762" y="470" as="sourcePoint" />
+            <mxPoint x="548" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="{ session, user, error: null }">
+          <mxGeometry as="geometry">
+            <mxPoint x="532" y="520" as="sourcePoint" />
+            <mxPoint x="298" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="Redirect to role-based Dashboard">
+          <mxGeometry as="geometry">
+            <mxPoint x="-9" y="-20" as="offset" />
+            <mxPoint x="282" y="580" as="sourcePoint" />
+            <mxPoint x="75" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
