@@ -8,15 +8,20 @@ A comprehensive school management system developed as part of CSE 220.
 | --------------- | --------- |
 | Aadarsh Banjade | Developer |
 | Sijan Budha     | Tester    |
-| Nihal Zapaliya  | Designer  |
+| Nihal Zapaliya  | Project Manager  |
 
 ## Project Structure
 
 ```
+├── planning/            Product backlog & sprint planning (sprint 1, 2)
 ├── requirements/        Functional & non-functional requirements, stakeholder analysis
 ├── design/              UML diagrams (use case, class, sequence, activity)
 └── testing/             Test plans & results (unit, integration, system, UAT)
 ```
+
+### `/planning`
+
+Contains the product backlog and sprint planning artifacts (sprint 1 and sprint 2).
 
 ### `/requirements`
 
