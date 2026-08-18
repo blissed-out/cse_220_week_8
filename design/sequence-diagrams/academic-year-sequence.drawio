@@ -1,0 +1,236 @@
+<mxfile host="Electron" agent="Mozilla/5.0">
+  <diagram id="academic-year-sequence" name="Academic Year Sequence Diagram">
+    <mxGraphModel dx="950" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="950" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- ===== LIFELINES ===== -->
+        <mxCell id="2" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="Admin" vertex="1">
+          <mxGeometry height="840" width="110" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":AcademicYearPage" vertex="1">
+          <mxGeometry height="840" width="140" x="220" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":SupabaseClient" vertex="1">
+          <mxGeometry height="840" width="130" x="470" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="shape=umlLifeline;html=1;strokeWidth=2;fontSize=12;whiteSpace=wrap;overflow=hidden;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value=":PostgresDB" vertex="1">
+          <mxGeometry height="840" width="130" x="720" y="40" as="geometry" />
+        </mxCell>
+
+        <!-- ===== PHASE 1 ACTIVATION BARS: Close Year ===== -->
+        <mxCell id="act_admin1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="130" width="16" x="67" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="act_page1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="110" width="16" x="282" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="act_client1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="70" width="16" x="527" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="act_db1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="35" width="16" x="777" y="170" as="geometry" />
+        </mxCell>
+
+        <!-- ===== PHASE 1 MESSAGES ===== -->
+        <mxCell id="m1" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="clickCloseCurrentYear()">
+          <mxGeometry as="geometry">
+            <mxPoint x="83" y="140" as="sourcePoint" />
+            <mxPoint x="282" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="update(academicYear, { status: 'closed' })">
+          <mxGeometry as="geometry">
+            <mxPoint x="5" y="-20" as="offset" />
+            <mxPoint x="298" y="160" as="sourcePoint" />
+            <mxPoint x="527" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="UPDATE academic_years SET status='closed'">
+          <mxGeometry as="geometry">
+            <mxPoint x="543" y="180" as="sourcePoint" />
+            <mxPoint x="777" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="success">
+          <mxGeometry as="geometry">
+            <mxPoint x="777" y="195" as="sourcePoint" />
+            <mxPoint x="543" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="{ data, error: null }">
+          <mxGeometry as="geometry">
+            <mxPoint x="527" y="215" as="sourcePoint" />
+            <mxPoint x="298" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="Display &quot;Academic year closed&quot;">
+          <mxGeometry as="geometry">
+            <mxPoint x="282" y="235" as="sourcePoint" />
+            <mxPoint x="83" y="235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ===== PHASE 2 ACTIVATION BARS: Finalize Records ===== -->
+        <mxCell id="act_admin2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="130" width="16" x="67" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="act_page2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="110" width="16" x="282" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="act_client2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="70" width="16" x="527" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="act_db2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="35" width="16" x="777" y="345" as="geometry" />
+        </mxCell>
+
+        <!-- ===== PHASE 2 MESSAGES ===== -->
+        <mxCell id="m7" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="clickFinalizeRecords()">
+          <mxGeometry as="geometry">
+            <mxPoint x="83" y="315" as="sourcePoint" />
+            <mxPoint x="282" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m8" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="rpc('finalize_attendance_and_results')">
+          <mxGeometry as="geometry">
+            <mxPoint x="5" y="-20" as="offset" />
+            <mxPoint x="298" y="335" as="sourcePoint" />
+            <mxPoint x="527" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="Lock attendance &amp; results, archive data">
+          <mxGeometry as="geometry">
+            <mxPoint x="543" y="355" as="sourcePoint" />
+            <mxPoint x="777" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m10" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="archived">
+          <mxGeometry as="geometry">
+            <mxPoint x="777" y="370" as="sourcePoint" />
+            <mxPoint x="543" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m11" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="{ data, error: null }">
+          <mxGeometry as="geometry">
+            <mxPoint x="527" y="390" as="sourcePoint" />
+            <mxPoint x="298" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m12" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="Display &quot;Records finalized &amp; archived&quot;">
+          <mxGeometry as="geometry">
+            <mxPoint x="282" y="410" as="sourcePoint" />
+            <mxPoint x="83" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ===== PHASE 3 ACTIVATION BARS: Auto-promote ===== -->
+        <mxCell id="act_admin3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="130" width="16" x="67" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="act_page3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="110" width="16" x="282" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="act_client3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="70" width="16" x="527" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="act_db3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="35" width="16" x="777" y="520" as="geometry" />
+        </mxCell>
+
+        <!-- ===== PHASE 3 MESSAGES ===== -->
+        <mxCell id="m13" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="clickPromoteStudents(passCriteria)">
+          <mxGeometry as="geometry">
+            <mxPoint x="83" y="490" as="sourcePoint" />
+            <mxPoint x="282" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m14" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="rpc('promote_students', { passCriteria })">
+          <mxGeometry as="geometry">
+            <mxPoint x="5" y="-20" as="offset" />
+            <mxPoint x="298" y="510" as="sourcePoint" />
+            <mxPoint x="527" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m15" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="UPDATE students SET class (promote/retain)">
+          <mxGeometry as="geometry">
+            <mxPoint x="543" y="530" as="sourcePoint" />
+            <mxPoint x="777" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m16" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="promoted count">
+          <mxGeometry as="geometry">
+            <mxPoint x="777" y="545" as="sourcePoint" />
+            <mxPoint x="543" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m17" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="{ promoted, retained }">
+          <mxGeometry as="geometry">
+            <mxPoint x="527" y="565" as="sourcePoint" />
+            <mxPoint x="298" y="565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m18" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="Display &quot;Students promoted &amp; retained&quot;">
+          <mxGeometry as="geometry">
+            <mxPoint x="282" y="585" as="sourcePoint" />
+            <mxPoint x="83" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ===== PHASE 4 ACTIVATION BARS: Create New Year ===== -->
+        <mxCell id="act_admin4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="130" width="16" x="67" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="act_page4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="110" width="16" x="282" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="act_client4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="70" width="16" x="527" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="act_db4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="35" width="16" x="777" y="695" as="geometry" />
+        </mxCell>
+
+        <!-- ===== PHASE 4 MESSAGES ===== -->
+        <mxCell id="m19" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="clickCreateNewYear(yearData)">
+          <mxGeometry as="geometry">
+            <mxPoint x="83" y="665" as="sourcePoint" />
+            <mxPoint x="282" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m20" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="insert(academicYear, { status: 'active' })">
+          <mxGeometry as="geometry">
+            <mxPoint x="5" y="-20" as="offset" />
+            <mxPoint x="298" y="685" as="sourcePoint" />
+            <mxPoint x="527" y="685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m21" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;endArrow=block;endFill=1;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="INSERT academic_years, SET active">
+          <mxGeometry as="geometry">
+            <mxPoint x="543" y="705" as="sourcePoint" />
+            <mxPoint x="777" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m22" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="{ data, error: null }">
+          <mxGeometry as="geometry">
+            <mxPoint x="777" y="720" as="sourcePoint" />
+            <mxPoint x="543" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m23" edge="1" parent="1" style="html=1;rounded=0;fontSize=10;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="{ data, error: null }">
+          <mxGeometry as="geometry">
+            <mxPoint x="527" y="740" as="sourcePoint" />
+            <mxPoint x="298" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m24" edge="1" parent="1" style="html=1;rounded=0;fontSize=9;dashed=1;endArrow=open;endFill=0;strokeWidth=1.5;fontColor=#000000;strokeColor=#000000;" value="Display &quot;New academic year activated&quot;">
+          <mxGeometry as="geometry">
+            <mxPoint x="282" y="760" as="sourcePoint" />
+            <mxPoint x="83" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
