@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0">
   <diagram id="use-case-diagram" name="Use Case Diagram">
-    <mxGraphModel dx="1398" dy="1275" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1400" background="#FFFFFF" math="0" shadow="0">
+    <mxGraphModel dx="1244" dy="1276" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1400" background="#FFFFFF" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
